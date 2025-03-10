@@ -1,0 +1,18 @@
+metin = input("Lütfen bir metin girin: ")
+
+with open("dosya.txt", "w") as file:
+    file.write(metin)
+
+with open("dosya.txt", "r") as file:
+    icerik = file.read()
+    print("Dosyanın içeriği: ", icerik)
+
+with open("satirlar.txt", "w") as file:
+    for i in range(5):
+        satir = input(f"{i+1}. satırı girin: ")
+        file.write(satir + "\n")
+
+with open("satirlar.txt", "r") as file:
+    print("\nDosyadaki satırlar: ")
+    for satir in file:
+        print(satir.strip())
