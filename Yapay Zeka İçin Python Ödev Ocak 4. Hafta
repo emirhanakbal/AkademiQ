@@ -1,0 +1,20 @@
+sayilar = []
+for i in range(5):
+    sayi = int(input("Bir sayı girin: "))
+    sayilar.append(sayi)
+print("Toplam:", sum(sayilar))
+print("Ortalama:", sum(sayilar)/len(sayilar))
+print("En büyük:", max(sayilar))
+print("En küçük:", min(sayilar))
+
+kelimeler = []
+adet = int(input("Kaç kelime gireceksiniz? "))
+for i in range(adet):
+    kelime = input("Kelime girin: ")
+    kelimeler.append(kelime)
+kelimeler.reverse()
+print("Ters sıralı:", kelimeler)
+
+liste = [1, 2, 2, 3, 4, 4, 5, 1]
+benzersiz = list(set(liste))
+print("Tekrarlar kaldırıldı:", benzersiz)
