@@ -1,0 +1,28 @@
+def hesap_makinesi(a, b):
+    print("Toplam:", a + b)
+    print("Fark:", a - b)
+    print("Çarpım:", a * b)
+    if b != 0:
+        print("Bölüm:", a / b)
+    else:
+        print("Sıfıra bölünemez")
+
+def palindrom_mu(kelime):
+    if kelime == kelime[::-1]:
+        print("Palindrom")
+    else:
+        print("Palindrom değil")
+
+def yuze_kac_yil_kaldi(yas):
+    kalan = 100 - yas
+    print("100 yaşına", kalan, "yıl sonra ulaşacaksınız")
+
+sayi1 = int(input("Birinci sayıyı girin: "))
+sayi2 = int(input("İkinci sayıyı girin: "))
+hesap_makinesi(sayi1, sayi2)
+
+kelime = input("Bir kelime girin: ")
+palindrom_mu(kelime)
+
+yas = int(input("Yaşınızı girin: "))
+yuze_kac_yil_kaldi(yas)
